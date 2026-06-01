@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Inicio</title>
 
 </head>
@@ -11,15 +11,16 @@
     <header>
         <nav class="menu">
             <div class="logo">
-                <img src="logotipo.png" alt="Logotipo">
+               <a href="#"><img src="../images/logotipo.png" alt="Logotipo"></a>
             </div>
+            <button class="menu-toggle" id="menuToggle"> &#9776 </button>
             <div class="itens">
-                <ul>
+                <ul id="lista-itens">
                     <li><a href="#">Início</a></li>
-                    <li><a href="#">Cursos</a></li>
-                    <li><a href="#">Onde Estudar?</a></li>
-                    <li><a href="#">Carreiras</a></li>
-                    <li><a href="#">FAQ</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="ondeestudar.html">Onde Estudar?</a></li>
+                    <li><a href="carreiras.html">Carreiras</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </div>
         </nav>
@@ -42,11 +43,16 @@
     </main>
     <footer>
         <div class="rodape">
-            <img src="logo.png" alt="Logo">
+            <img src="../images/logo.png" alt="Logo">
             <h3>CONECTA TI</h3>
             <p>Copyright &copy 2026 - Todos os direitos reservados - conectati.com</p>
         </div>
         
     </footer>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('lista-itens');
+        menuToggle.addEventListener('click', () => {navMenu.classList.toggle('active');});
+    </script>
 </body>
-</html> 
+</html>
