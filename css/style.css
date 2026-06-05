@@ -70,7 +70,7 @@ footer .rodape{
     align-items: center;
 }
 footer .rodape img{
-    width: 5%;
+    width: 4%;
     position: relative;
     top: -20px;
     border-radius: 15px;
@@ -83,6 +83,11 @@ footer .rodape p{
 }
 main{
     flex:1
+}
+@media only screen and (min-width:1000px) and (max-width: 1400px){
+    footer .rodape img{
+        width: 5.5%;
+    }
 }
 @media only screen and (min-width:900px) and (max-width: 1000px){
     header{
@@ -180,7 +185,7 @@ main{
         margin-bottom: 30px;
     }
 }
-@media only screen and (min-width:410px) and (max-width: 580px){
+@media only screen and (min-width:420px) and (max-width: 580px){
     header{
         font-size: 12px;
     }
@@ -203,7 +208,8 @@ main{
         align-items: center;
         z-index: 1000;
         opacity: 0;
-        transition: opacity 0.15s ease-in;
+        visibility: hidden;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
     }
     nav div.itens ul#lista-itens li{
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -222,6 +228,7 @@ main{
         background-color: #1e1e1e;
     }
     nav div.itens ul#lista-itens.active{
+        visibility: visible;
         opacity: 1;
     }
     footer .rodape{
@@ -263,7 +270,8 @@ main{
         align-items: center;
         z-index: 1000;
         opacity: 0;
-        transition: opacity 0.15s ease-in;
+        visibility: hidden;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
     }
     nav div.itens ul#lista-itens li{
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -282,6 +290,7 @@ main{
         background-color: #1e1e1e;
     }
     nav div.itens ul#lista-itens.active{
+        visibility: visible;
         opacity: 1;
     }
     footer .rodape{
