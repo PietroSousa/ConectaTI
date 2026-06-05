@@ -1,0 +1,485 @@
+/* CONFIGURAÇÕES GERAIS E SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ========================================================
+   PADRONIZAÇÃO ESTRITA DE FONTES (APENAS CONTEÚDO PRINCIPAL)
+======================================================== */
+main {
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6,
+main strong,
+main .tab-btn {
+    font-family: 'Tomorrow', sans-serif;
+}
+
+/* CARROSSEL HERO SECTION */
+.hero-carousel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #1E1E1E;
+}
+
+.carousel-track {
+    display: flex;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.carousel-slide:hover img {
+    opacity: 0.85;
+}
+
+/* TÍTULO CENTRALIZADO SOBRE A IMAGEM */
+.slide-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 2.5rem;
+    color: #EAE9D5;
+    text-align: center;
+    padding: 15px 30px;
+    margin: 0;
+    background-color: rgba(30, 30, 30, 0.85);
+    border: 2px solid #206491;
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.carousel-slide:hover .slide-title {
+    background-color: #043266;
+    color: #fff;
+    transform: translate(-50%, -55%);
+}
+
+/* Botões do Carrossel */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(4, 50, 102, 0.7);
+    color: #EAE9D5;
+    border: none;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 3rem;
+    padding: 20px 30px;
+    cursor: pointer;
+    z-index: 100;
+    transition: background-color 0.3s;
+}
+
+.carousel-btn:hover {
+    background-color: #206491;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+/* SEÇÕES DAS PROFISSÕES */
+.career-section {
+    padding: 60px 20px;
+}
+
+/* A MÁGICA DO FUNDO: Estica a última seção até encostar no rodapé */
+.career-section:last-child {
+    padding-bottom: 90px;
+}
+
+.section-dark {
+    background-color: #1E1E1E;
+}
+
+.section-light {
+    background-color: #2D2D28;
+}
+
+.section-title {
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 2.5rem;
+    color: #206491;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+/* ========================================================
+   SISTEMA DE GRID/FLEXBOX (AGRUPAMENTO INTELIGENTE)
+======================================================== */
+.profession-list {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* PADRÃO: PARES (2 ou 4 fichas) - Ocupam 50% menos o gap */
+.profession-card {
+    width: calc(50% - 15px);
+    /* Largura estrita matemática */
+    flex: none;
+    /* CORREÇÃO: Proíbe o navegador de espremer o card */
+    background-color: #1E1E1E;
+    border: 5px solid #206491;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-dark .profession-card {
+    background-color: #2D2D28;
+}
+
+/* REGRA DE TRIOS (3 fichas) - Ocupam 33% menos o gap */
+.profession-list.layout-three .profession-card {
+    width: calc(33.333% - 20px);
+    flex: none;
+}
+
+/* REGRA DE 5 FICHAS (3 no topo, 2 na base) */
+.profession-list.layout-five .profession-card:nth-child(-n+3) {
+    width: calc(33.333% - 20px);
+    flex: none;
+}
+
+.profession-list.layout-five .profession-card:nth-child(n+4) {
+    width: calc(50% - 15px);
+    flex: none;
+}
+
+/* TIPOGRAFIA E PERFIL DOS CARDS */
+.profession-card h3 {
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 1.7rem;
+    color: #EAE9D5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profession-profile {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #EAE9D5;
+    margin-bottom: 25px;
+    padding-left: 15px;
+    border-left: 4px solid #206491;
+    opacity: 0.9;
+    text-align: left;
+}
+
+.profession-profile strong {
+    font-family: 'Tomorrow', sans-serif;
+    color: #206491;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.profession-card p {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #EAE9D5;
+    text-align: center;
+}
+
+/* ========================================================
+   COMPONENTE: TABS (DESKTOP) E ACCORDION (MOBILE)
+======================================================== */
+
+.tabs-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Botões da Aba (Estilos Base) */
+.tab-btn {
+    flex-grow: 1;
+    order: 1;
+    color: #EAE9D5;
+    border: 5px solid #000;
+    padding: 12px 0;
+    cursor: pointer;
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 600;
+    transition: opacity 0.3s, transform 0.2s, border-color 0.3s;
+    opacity: 0.40;
+    font-size: 1.3rem;
+}
+
+.tab-btn:hover {
+    opacity: 0.8;
+}
+
+/* Estado Ativo do Botão */
+.tab-btn.active {
+    opacity: 1;
+}
+
+/* Cores Específicas: Aba 1 (Trabalho) */
+.tab-btn:nth-of-type(1) {
+    background-color: #043266;
+    border-radius: 6px 0 0 0;
+    border-right-width: 2.5px;
+}
+
+.tab-content:nth-of-type(1) {
+    background-color: #043266;
+}
+
+/* Cores Específicas: Aba 2 (Estuda) */
+.tab-btn:nth-of-type(2) {
+    background-color: #206491;
+    border-radius: 0 6px 0 0;
+    border-left-width: 2.5px;
+}
+
+.tab-content:nth-of-type(2) {
+    background-color: #206491;
+}
+
+/* Conteúdo da Aba (Geral) */
+.tab-content {
+    width: 100%;
+    order: 2;
+    display: none;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    margin-top: 0;
+    border: 5px solid #000;
+    border-top: none;
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* ========================================================
+   MEDIA QUERIES (BREAKPOINTS DE RESPONSIVIDADE E TIPOGRAFIA)
+======================================================== */
+
+@media only screen and (max-width: 1000px) {
+
+    .profession-card,
+    .profession-list.layout-three .profession-card,
+    .profession-list.layout-five .profession-card:nth-child(-n+3),
+    .profession-list.layout-five .profession-card:nth-child(n+4) {
+        width: calc(50% - 15px) !important;
+        flex: none !important;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .slide-title {
+        font-size: 2rem;
+    }
+
+    .profession-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .profession-profile {
+        font-size: 0.9rem;
+    }
+
+    .profession-profile strong {
+        font-size: 1.2rem;
+    }
+
+    .profession-card p {
+        font-size: 1.15rem;
+    }
+
+    .tab-btn {
+        font-size: 1.15rem;
+    }
+
+    .carousel-btn {
+        font-size: 2.2rem;
+        padding: 15px 22px;
+    }
+}
+
+@media only screen and (max-width: 749px) {
+
+    .profession-card,
+    .profession-list.layout-three .profession-card,
+    .profession-list.layout-five .profession-card:nth-child(-n+3),
+    .profession-list.layout-five .profession-card:nth-child(n+4) {
+        width: 100% !important;
+        flex: none !important;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .slide-title {
+        font-size: 1.6rem;
+    }
+
+    .profession-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .profession-profile {
+        font-size: 0.85rem;
+    }
+
+    .profession-profile strong {
+        font-size: 1.1rem;
+    }
+
+    .profession-card p {
+        font-size: 1.05rem;
+    }
+
+    .tab-btn {
+        font-size: 1.1rem;
+    }
+
+    .carousel-btn {
+        font-size: 1.6rem;
+        padding: 10px 15px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    #lista-itens {
+        visibility: hidden;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .profession-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .profession-profile {
+        font-size: 0.85rem;
+    }
+
+    .profession-profile strong {
+        font-size: 1rem;
+    }
+
+    .profession-card p {
+        font-size: 0.95rem;
+    }
+
+    .hero-carousel {
+        height: auto;
+        min-height: 300px;
+    }
+
+    .carousel-slide img {
+        height: 50vh;
+    }
+
+    .slide-title {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+        width: 70%;
+    }
+
+    .carousel-btn {
+        top: 50%;
+        font-size: 1rem;
+        padding: 5px 10px;
+        z-index: 100;
+    }
+
+    .tabs-wrapper {
+        flex-direction: column;
+    }
+
+    .tab-btn {
+        font-size: 1rem;
+        order: initial;
+        width: 100%;
+        text-align: left;
+        padding: 15px;
+        margin-bottom: 5px;
+        position: relative;
+    }
+
+    .tab-btn:nth-of-type(1),
+    .tab-btn:nth-of-type(2) {
+        border-radius: 4px;
+        border: 3.2px solid #000;
+    }
+
+    .tab-btn.active:nth-of-type(1),
+    .tab-btn.active:nth-of-type(2) {
+        border-bottom-color: #000;
+    }
+
+    .tab-btn::after {
+        content: '+';
+        position: absolute;
+        right: 15px;
+        font-size: 1.2rem;
+    }
+
+    .tab-btn.active::after {
+        content: '-';
+    }
+
+    .tab-content {
+        order: initial;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        margin-top: 0;
+        border: 3.2px solid #000;
+    }
+}

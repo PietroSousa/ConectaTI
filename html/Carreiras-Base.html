@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trilhas de Carreira - Conecta TI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600&family=Montserrat:wght@700&family=Tomorrow:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/Carreiras-Estilo.css">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <a href="#"><img src="../images/logotipo.png" alt="Logotipo"></a>
+            </div>
+            <button class="menu-toggle" id="menuToggle"> &#9776 </button>
+            <div class="itens">
+                <ul id="lista-itens">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="OndeEstudar.html">Onde Estudar?</a></li>
+                    <li><a href="Carreiras-Base.html">Carreiras</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-carousel">
+            <div class="carousel-track" id="carouselTrack">
+                <a href="#desenvolvimento" class="carousel-slide">
+                    <img src="../images/Carrossel Desenvolvimento.jpeg" alt="Desenvolvimento">
+                    <h3 class="slide-title">Desenvolvimento de Software</h3>
+                </a>
+                <a href="#seguranca" class="carousel-slide">
+                    <img src="../images/Carrossel Segurança.jpeg" alt="Segurança">
+                    <h3 class="slide-title">Cibersegurança</h3>
+                </a>
+                <a href="#dados" class="carousel-slide">
+                    <img src="../images/Carrossel Big Data.jpeg" alt="Big Data">
+                    <h3 class="slide-title">Gestão de Dados e Big Data</h3>
+                </a>
+                <a href="#ia" class="carousel-slide">
+                    <img src="../images/Carrossel-IA.jpeg" alt="Inteligência Artificial">
+                    <h3 class="slide-title">Inteligência Artificial e Machine Learning</h3>
+                </a>
+                <a href="#uiux" class="carousel-slide">
+                    <img src="../images/Carrossel-UI-UX.jpeg" alt="UI/UX">
+                    <h3 class="slide-title">Design de Experiência e Interface</h3>
+                </a>
+                <a href="#robotica" class="carousel-slide">
+                    <img src="../images/Carrossel-Robotica.jpeg" alt="Robótica">
+                    <h3 class="slide-title">Automação, Robótica e Internet das Coisas</h3>
+                </a>
+                <a href="#infra" class="carousel-slide">
+                    <img src="../images/Carrossel-Infra.jpeg" alt="Infraestrutura">
+                    <h3 class="slide-title">Infraestrutura e Suporte Físico</h3>
+                </a>
+                <a href="#qa" class="carousel-slide">
+                    <img src="../images/Carrossel-QA.jpeg" alt="QA e Negócios">
+                    <h3 class="slide-title">Qualidade e Gestão</h3>
+                </a>
+            </div>
+            <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+            <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+        </section>
+
+        <section id="desenvolvimento" class="career-section section-dark">
+            <h2 class="section-title">Desenvolvimento de Software</h2>
+            <div class="profession-list">
+
+                <div class="profession-card">
+                    <h3>Desenvolvedor Frontend</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Detalhistas com interesse em design,
+                        que gostam de ver o resultado visual imediato daquilo que criam e de solucionar desafios de
+                        interatividade.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="front-trab">Trabalho</button>
+                        <div class="tab-content active" id="front-trab">
+                            <p>Constrói a parte visual e interativa de sites e aplicativos (botões, menus e animações),
+                                transformando o design estático em uma página real que funciona perfeitamente em
+                                qualquer tela.</p>
+                        </div>
+                        <button class="tab-btn" data-target="front-est">Estudo</button>
+                        <div class="tab-content" id="front-est">
+                            <p>O trio base (HTML para estrutura, CSS para visual e JavaScript para ação), avançando para
+                                frameworks modernos (React ou Vue.js) que aceleram a criação de sites complexos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profession-card">
+                    <h3>Desenvolvedor Backend</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Pessoas focadas em lógica pura, que
+                        gostam de organizar estruturas, entender os bastidores da tecnologia e programar fluxos
+                        complexos de segurança.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="back-trab">Trabalho</button>
+                        <div class="tab-content active" id="back-trab">
+                            <p>Constrói os "motores" invisíveis dos sistemas. Cuida da inteligência por trás dos panos,
+                                como validação de senhas, processamento de pagamentos, proteção de dados e organização
+                                dos bancos de dados.</p>
+                        </div>
+                        <button class="tab-btn" data-target="back-est">Estudo</button>
+                        <div class="tab-content" id="back-est">
+                            <p>Lógica de servidores, regras rígidas de segurança, bancos de dados (MySQL, PostgreSQL) e
+                                linguagens robustas como Python, Java ou Node.js.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profession-card">
+                    <h3>Desenvolvedor Mobile</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Entusiastas de dispositivos móveis,
+                        que gostam de otimizar sistemas para torná-los rápidos e convenientes para o uso diário.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="mob-trab">Trabalho</button>
+                        <div class="tab-content active" id="mob-trab">
+                            <p>Cria aplicativos exclusivamente para smartphones e tablets. Foca em desenvolver softwares
+                                leves, que poupem bateria e aproveitem os recursos do aparelho, como câmera, GPS e
+                                notificações.</p>
+                        </div>
+                        <button class="tab-btn" data-target="mob-est">Estudo</button>
+                        <div class="tab-content" id="mob-est">
+                            <p>Desenvolvimento nativo (Kotlin para Android, Swift para iOS) ou tecnologias
+                                multiplataforma (Flutter, React Native) para criar apps que rodam em ambos os sistemas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profession-card">
+                    <h3>Desenvolvedor de Jogos</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Gamers pacientes (caçar bugs
+                        exige persistência), com raciocínio dinâmico e paixão por mecânicas de entretenimento e
+                        narrativas.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="game-trab">Trabalho</button>
+                        <div class="tab-content active" id="game-trab">
+                            <p>Transforma artes e roteiros em um universo interativo. Programa a inteligência artificial
+                                dos personagens, as leis da física (gravidade e colisões) e garante que os controles
+                                respondam em tempo real.</p>
+                        </div>
+                        <button class="tab-btn" data-target="game-est">Estudo</button>
+                        <div class="tab-content" id="game-est">
+                            <p>Motores de jogos como Unity (usando C#) e Unreal Engine (usando C++), além de matemática
+                                e geometria espacial para a orientação 2D e 3D.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="seguranca" class="career-section section-light">
+            <h2 class="section-title">Cibersegurança</h2>
+            <div class="profession-list">
+
+                <div class="profession-card">
+                    <h3>Analista de Defesa (Blue Team)</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Profissionais atentos, investigativos e
+                        metódicos, com alto autocontrole para gerenciar situações de crise sob extrema pressão.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="blue-trab">Trabalho</button>
+                        <div class="tab-content active" id="blue-trab">
+                            <p>Age como o "policial digital" da empresa. Monitora as redes em tempo real para detectar
+                                atividades suspeitas, isola ameaças (vírus ou hackers) e reestabelece a segurança dos
+                                computadores.</p>
+                        </div>
+                        <button class="tab-btn" data-target="blue-est">Estudo</button>
+                        <div class="tab-content" id="blue-est">
+                            <p>Redes de computadores, Linux, arquitetura de Firewalls, leitura de registros (logs),
+                                ferramentas de monitoramento automatizado e leis de proteção de dados (LGPD).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profession-card">
+                    <h3>Hacker Ético (Red Team)</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Indivíduos incrivelmente curiosos e
+                        éticos, que pensam "fora da caixa" para desmontar sistemas e achar soluções não óbvias.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="red-trab">Trabalho</button>
+                        <div class="tab-content active" id="red-trab">
+                            <p>O "invasor do bem". Contratado para simular ataques reais contra a própria empresa,
+                                testando vulnerabilidades nos sistemas ou senhas fracas antes que cibercriminosos
+                                verdadeiros as explorem.</p>
+                        </div>
+                        <button class="tab-btn" data-target="red-est">Estudo</button>
+                        <div class="tab-content" id="red-est">
+                            <p>Técnicas de invasão (pentest), sistemas como o Kali Linux, escaneamento de portas (Nmap),
+                                Engenharia Social (testes de comportamento humano) e scripts de ataque em Python.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dados" class="career-section section-dark">
+            <h2 class="section-title">Gestão de Dados e Big Data</h2>
+            <div class="profession-list">
+
+                <div class="profession-card">
+                    <h3>Engenheiro de Dados</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Construtores de rotinas focados em
+                        arquitetura de sistemas, que preferem atuar nos bastidores garantindo o desempenho de
+                        infraestruturas pesadas.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="engd-trab">Trabalho</button>
+                        <div class="tab-content active" id="engd-trab">
+                            <p>É o arquiteto que cria as "estradas" dos dados. Constrói rotinas automáticas que coletam,
+                                limpam e transportam volumes gigantescos de dados brutos (Big Data) para "armazéns"
+                                seguros em alta velocidade.</p>
+                        </div>
+                        <button class="tab-btn" data-target="engd-est">Estudo</button>
+                        <div class="tab-content" id="engd-est">
+                            <p>Linguagens (Python e Scala), bancos de dados gigantes (NoSQL, MongoDB), ferramentas de
+                                processamento em larga escala (Spark) e infraestrutura em nuvem (AWS, Google Cloud).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profession-card">
+                    <h3>Analista de Business Intelligence (BI)</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Profissionais comunicativos e com
+                        raciocínio analítico, que adoram transformar planilhas complexas em histórias visuais claras e
+                        estratégicas.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="bi-trab">Trabalho</button>
+                        <div class="tab-content active" id="bi-trab">
+                            <p>Traduz o volume de dados em painéis visuais fáceis de entender (dashboards). Transforma
+                                números brutos em relatórios gráficos que ajudam a diretoria a tomar decisões de
+                                negócios.</p>
+                        </div>
+                        <button class="tab-btn" data-target="bi-est">Estudo</button>
+                        <div class="tab-content" id="bi-est">
+                            <p>A linguagem de consulta SQL, ferramentas de montagem visual (Power BI, Tableau) e noções
+                                de administração de empresas e indicadores financeiros (KPIs).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profession-card">
+                    <h3>Administrador de Banco de Dados (DBA)</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Pessoas extremamente organizadas e
+                        cautelosas, atentas à estabilidade do sistema e com agilidade para lidar com crises e
+                        recuperação de dados.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="dba-trab">Trabalho</button>
+                        <div class="tab-content active" id="dba-trab">
+                            <p>O guardião das informações vitais da empresa. Gerencia quem pode acessar o banco de
+                                dados, configura o desempenho e garante backups automáticos diários contra panes
+                                elétricas ou perdas.</p>
+                        </div>
+                        <button class="tab-btn" data-target="dba-est">Estudo</button>
+                        <div class="tab-content" id="dba-est">
+                            <p>SQL profundo, gerenciadores industriais (Oracle, SQL Server, PostgreSQL), arquitetura de
+                                servidores e planos de recuperação de arquivos em emergências.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ia" class="career-section section-light">
+            <h2 class="section-title">Inteligência Artificial e Machine Learning</h2>
+            <div class="profession-list">
+
+                <div class="profession-card">
+                    <h3>Engenheiro de Machine Learning</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Curiosos por lógicas de pensamento
+                        abstrato, apaixonados por desvendar enigmas matemáticos e interessados em criar inovações
+                        tecnológicas revolucionárias.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="ml-trab">Trabalho</button>
+                        <div class="tab-content active" id="ml-trab">
+                            <p>Treina o "cérebro" das IAs. Constrói programas que aprendem sozinhos observando exemplos
+                                anteriores, como as recomendações do YouTube, carros autônomos ou geradores de textos e
+                                imagens.</p>
+                        </div>
+                        <button class="tab-btn" data-target="ml-est">Estudo</button>
+                        <div class="tab-content" id="ml-est">
+                            <p>Muita matemática base (cálculo e estatística), programação em Python e bibliotecas que
+                                simulam redes neurais humanas, como o TensorFlow e o PyTorch.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profession-card">
+                    <h3>Cientista de Dados</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Pessoas com espírito científico e
+                        investigativo, que unem o rigor da matemática pura com o pensamento prático de negócios.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="cd-trab">Trabalho</button>
+                        <div class="tab-content active" id="cd-trab">
+                            <p>Analisa o histórico de informações de uma empresa para prever o futuro. Cria modelos
+                                preditivos inteligentes capazes de antecipar tendências ou automatizar bloqueios (como
+                                sistemas antifraude em cartões).</p>
+                        </div>
+                        <button class="tab-btn" data-target="cd-est">Estudo</button>
+                        <div class="tab-content" id="cd-est">
+                            <p>Estatística avançada, linguagens científicas (Python ou R), modelos algorítmicos
+                                preditivos e "Storytelling de Dados" (a arte de explicar matemática complexa de forma
+                                simples).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="uiux" class="career-section section-dark">
+            <h2 class="section-title">Design de Experiência e Interface</h2>
+            <div class="profession-list">
+
+                <div class="profession-card">
+                    <h3>UX Designer (Experiência)</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Pessoas altamente empáticas, ótimas
+                        ouvintes e observadoras, que querem acabar com a frustração digital tornando os sistemas simples
+                        para qualquer um.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="ux-trab">Trabalho</button>
+                        <div class="tab-content active" id="ux-trab">
+                            <p>O defensor do usuário. Entende as necessidades reais das pessoas através de pesquisas e
+                                desenha os "esqueletos" e fluxos do aplicativo para garantir que ele seja intuitivo e
+                                fácil de navegar.</p>
+                        </div>
+                        <button class="tab-btn" data-target="ux-est">Estudo</button>
+                        <div class="tab-content" id="ux-est">
+                            <p>Psicologia do comportamento, testes de usabilidade com usuários, pesquisa de campo,
+                                arquitetura da informação e uso prático de ferramentas de rascunho como o Figma.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profession-card">
+                    <h3>UI Designer (Interface)</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Criativos com forte apelo visual,
+                        ligados em estética, artes e moda digital, possuindo um olhar clínico para detalhes e
+                        alinhamentos geométricos.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="ui-trab">Trabalho</button>
+                        <div class="tab-content active" id="ui-trab">
+                            <p>Cria a identidade visual e estética do projeto. Define tipografia, tamanho dos botões,
+                                paleta de cores e animações, entregando o layout exato que vai aparecer na tela do
+                                usuário.</p>
+                        </div>
+                        <button class="tab-btn" data-target="ui-est">Estudo</button>
+                        <div class="tab-content" id="ui-est">
+                            <p>Teoria visual das cores, tipografia, estruturação moderna de grids de tela e domínio
+                                avançado de ferramentas de prototipação de alta fidelidade (Figma, Adobe XD).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="robotica" class="career-section section-light">
+            <h2 class="section-title">Automação, Robótica e Internet das Coisas</h2>
+            <div class="profession-list">
+
+                <div class="profession-card">
+                    <h3>Engenheiro de Automação</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Fascinados por engenharia, que adoram
+                        física e eletromecânica e sentem atração por grandes maquinários industriais funcionando
+                        automaticamente.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="auto-trab">Trabalho</button>
+                        <div class="tab-content active" id="auto-trab">
+                            <p>Dá inteligência às indústrias. Projeta e programa os sistemas que controlam maquinários
+                                de grande porte, braços robóticos e esteiras, garantindo que as fábricas operem de forma
+                                autônoma e segura.</p>
+                        </div>
+                        <button class="tab-btn" data-target="auto-est">Estudo</button>
+                        <div class="tab-content" id="auto-est">
+                            <p>Computadores industriais de fábrica (CLPs), automação pneumática/hidráulica, robótica
+                                aplicada, engenharia elétrica de potência e programação de maquinários.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profession-card">
+                    <h3>Desenvolvedor de Sistemas Embarcados</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Focados em eficiência técnica e
+                        economia de recursos, que adoram manusear e soldar componentes eletrônicos e placas de circuito
+                        integrado.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="emb-trab">Trabalho</button>
+                        <div class="tab-content active" id="emb-trab">
+                            <p>Cria os programas enxutos que rodam em microchips inseridos dentro de eletrodomésticos,
+                                TVs inteligentes, painéis de carros ou equipamentos de UTI, integrando software ao mundo
+                                físico.</p>
+                        </div>
+                        <button class="tab-btn" data-target="emb-est">Estudo</button>
+                        <div class="tab-content" id="emb-est">
+                            <p>Programação de baixo nível (C e C++), arquitetura física de microchips (ARM ou Arduino),
+                                eletrônica digital e técnicas de otimização severa de pouca memória e bateria.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profession-card">
+                    <h3>Especialista em IoT (Internet das Coisas)</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Inovadores e curiosos que adoram
+                        "engenhocas", unindo antenas de transmissão, chips e programação para facilitar a vida doméstica
+                        ou profissional.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="iot-trab">Trabalho</button>
+                        <div class="tab-content active" id="iot-trab">
+                            <p>Conecta os objetos físicos à internet (de geladeiras e lâmpadas a sensores de
+                                agricultura), permitindo que conversem entre si, gerem dados e sejam acionados pelo
+                                celular em cidades e casas inteligentes.</p>
+                        </div>
+                        <button class="tab-btn" data-target="iot-est">Estudo</button>
+                        <div class="tab-content" id="iot-est">
+                            <p>Redes sem fio de longo alcance (LoRa, ZigBee, Bluetooth, Wi-Fi), programação de sensores
+                                físicos, criptografia de sinais e integração massiva de dados em nuvem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="infra" class="career-section section-dark">
+            <h2 class="section-title">Infraestrutura e Suporte Físico</h2>
+            <div class="profession-list">
+
+                <div class="profession-card">
+                    <h3>Administrador de Redes</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Profissionais organizados, que gostam
+                        de entender os trajetos físicos da internet global e preferem atuar diretamente no manuseio de
+                        infraestrutura material.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="redes-trab">Trabalho</button>
+                        <div class="tab-content active" id="redes-trab">
+                            <p>Projeta a estrutura física de internet das empresas. Cuida de onde passam as fibras
+                                ópticas, monta antenas Wi-Fi e configura servidores locais e roteadores para conexões
+                                robustas.</p>
+                        </div>
+                        <button class="tab-btn" data-target="redes-est">Estudo</button>
+                        <div class="tab-content" id="redes-est">
+                            <p>Cabeamento estruturado (fibra e trançado), roteamento TCP/IP, configuração prática de
+                                hardwares pesados de rede (Cisco, Huawei) e segurança física de telecomunicação.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profession-card">
+                    <h3>Operador de Data Center</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Amantes da organização com precisão
+                        cirúrgica, que adoram grandes infraestruturas elétricas e lidam bem com protocolos rigorosos de
+                        segurança moderna.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="data-trab">Trabalho</button>
+                        <div class="tab-content active" id="data-trab">
+                            <p>Cuida das "salas da nuvem", gigantes e super-refrigeradas, repletas de servidores
+                                empresariais. Substitui discos rígidos queimados e monitora os painéis de eletricidade e
+                                ar-condicionado.</p>
+                        </div>
+                        <button class="tab-btn" data-target="data-est">Estudo</button>
+                        <div class="tab-content" id="data-est">
+                            <p>Hardware industrial de servidores densos, geradores elétricos a diesel, refrigeração
+                                térmica de grande porte e rotinas de manutenção contínua de peças sem desligar os
+                                sistemas (hot-swap).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="qa" class="career-section section-light">
+            <h2 class="section-title">Qualidade e Gestão</h2>
+            <div class="profession-list">
+
+                <div class="profession-card">
+                    <h3>Analista de Garantia de Qualidade de Software (QA Tester)</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Metódicos, rigorosos e defensores natos
+                        da qualidade impecável, possuindo um olhar clínico capaz de achar problemas onde todos
+                        acreditavam estar perfeito.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="qa-trab">Trabalho</button>
+                        <div class="tab-content active" id="qa-trab">
+                            <p>O caçador de falhas. Antes do lançamento, ele testa os sites ou jogos das formas mais
+                                inusitadas possíveis (clicando rápido, digitando erros) para tentar travá-los e garantir
+                                que o cliente final nunca sofra com "bugs".</p>
+                        </div>
+                        <button class="tab-btn" data-target="qa-est">Estudo</button>
+                        <div class="tab-content" id="qa-est">
+                            <p>Escrita de casos de testes lógicos, programação de scripts com robôs automáticos
+                                (Cypress, Selenium) e metodologias para criar relatórios técnicos precisos de correção.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profession-card">
+                    <h3>Gerente de Produto de TI (PM)</h3>
+                    <p class="profession-profile"><strong>Perfil ideal:</strong> Líderes carismáticos e excelentes
+                        comunicadores, que preferem organizar cronogramas e orientar pessoas ao invés de programar o dia
+                        inteiro.</p>
+                    <div class="tabs-wrapper">
+                        <button class="tab-btn active" data-target="pm-trab">Trabalho</button>
+                        <div class="tab-content active" id="pm-trab">
+                            <p>O maestro do projeto. Ouve a necessidade do cliente, define as etapas do aplicativo e
+                                lidera o time de designers e programadores, garantindo que o cronograma de entrega seja
+                                respeitado e a equipe colabore.</p>
+                        </div>
+                        <button class="tab-btn" data-target="pm-est">Estudo</button>
+                        <div class="tab-content" id="pm-est">
+                            <p>Gestão ágil e produtividade (Scrum e Kanban), análise de mercado concorrente, finanças
+                                básicas, oratória e técnicas de facilitação e mediação de pessoas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <img src="../images/logo.png" alt="Logo">
+            <h3>CONECTA TI</h3>
+            <p>Copyright &copy 2026 - Todos os direitos reservados - conectati.com</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script do Menu Mobile (Herdado do Core)
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('lista-itens');
+        menuToggle.addEventListener('click', () => {
+            if (navMenu.style.opacity === '1') {
+                navMenu.style.opacity = '0';
+                navMenu.style.visibility = 'hidden';
+            } else {
+                navMenu.style.opacity = '1';
+                navMenu.style.visibility = 'visible';
+            }
+        });
+    </script>
+    <script src="../javascript/Carreiras-Eventos.js"></script>
+</body>
+
+</html>
