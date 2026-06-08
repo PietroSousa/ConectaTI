@@ -1,0 +1,23 @@
+main div.faculdade{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid white;
+    padding: 5px;
+}
+main div.faculdade img{
+    margin: 5px;
+    border: 2px solid white;
+}
+main div.faculdade div.texto{
+    margin: 5px;
+    border: 2px solid white;
+}
+main div.faculdade div.texto h3{
+    border: 2px solid white;
+}
+main div.faculdade div.texto p{
+    border: 2px solid white;
+}
