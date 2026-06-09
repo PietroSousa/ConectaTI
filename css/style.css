@@ -84,6 +84,382 @@ footer .rodape p{
 main{
     flex:1
 }
+
+/* =============================================
+   PÁGINA INÍCIO — Seção principal (<main>)
+   Cole abaixo de "main { flex:1 }" no style.css
+   ============================================= */
+
+.home-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+    width: 100%;
+    min-height: 100%;
+    padding: 4rem 1.5rem;
+    background-color: #2d2d28;
+    font-family: "Tomorrow", sans-serif;
+}
+
+.hero {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(234, 233, 213, 0.1);
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero__titulo {
+    font-size: clamp(1.75rem, 4vw, 2.75rem);
+    font-weight: 700;
+    line-height: 1.25;
+    color: #eae9d5;
+    letter-spacing: 0.02em;
+}
+
+.hero__institucional {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 750px;
+}
+
+.hero__texto {
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    font-weight: 300;
+    line-height: 1.7;
+    color: rgba(234, 233, 213, 0.88);
+}
+
+.hero__texto strong {
+    color: #206491;
+    font-weight: 600;
+}
+
+.hero__destaques {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+    max-width: 680px;
+    margin: 0.5rem 0;
+    text-align: left;
+}
+
+.hero__destaque-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: rgba(4, 50, 102, 0.25);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(32, 100, 145, 0.25);
+    font-size: 0.95rem;
+    color: rgba(234, 233, 213, 0.95);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero__destaque-item:hover {
+    transform: translateY(-2px);
+    border-color: rgba(32, 100, 145, 0.6);
+    box-shadow: 0 4px 12px rgba(4, 50, 102, 0.3);
+}
+
+.hero__destaque-check {
+    color: #206491;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.btn-hero {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    padding: 0.9rem 2.2rem;
+    border-radius: 30px;
+    letter-spacing: 0.05em;
+    align-self: center;
+}
+
+/* =============================================
+   ESTILOS DAS NOVAS SEÇÕES INSTITUCIONAIS
+   ============================================= */
+
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.5rem;
+    width: 100%;
+    max-width: 1000px;
+    padding: 3rem;
+    background-color: #1e1e1e; /* Fundo escuro secundário da paleta */
+    border-radius: 12px;
+    border: 1px solid rgba(32, 100, 145, 0.25); /* Borda azul sutil */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    scroll-margin-top: 2rem;
+}
+
+.section-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(4, 50, 102, 0.35);
+    border-color: rgba(32, 100, 145, 0.55);
+}
+
+.section-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.section-content {
+    flex: 1.1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.section-subtitle {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #206491;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: -0.5rem;
+}
+
+.section-title {
+    font-size: clamp(1.4rem, 3vw, 1.85rem);
+    font-weight: 600;
+    color: #eae9d5;
+    position: relative;
+    padding-bottom: 0.6rem;
+    letter-spacing: 0.02em;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #206491; /* Destaque em azul médio */
+    border-radius: 2px;
+}
+
+.section-text {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-weight: 300;
+    line-height: 1.75;
+    color: rgba(234, 233, 213, 0.85);
+}
+
+.section-image-wrapper {
+    flex: 0.9;
+    width: 100%;
+    max-width: 440px;
+    height: 290px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(234, 233, 213, 0.08);
+}
+
+.section-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.section-container:hover .section-image-wrapper img {
+    transform: scale(1.04);
+}
+
+/* Botões de Ação (CTAs) */
+.btn-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.75rem;
+    background-color: #043266;
+    color: #eae9d5;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    border: 1px solid #206491;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    align-self: flex-start;
+    box-shadow: 0 4px 12px rgba(4, 50, 102, 0.2);
+    cursor: pointer;
+}
+
+.btn-cta:hover {
+    background-color: #206491;
+    border-color: #eae9d5;
+    box-shadow: 0 6px 18px rgba(32, 100, 145, 0.4);
+    transform: translateY(-2px);
+}
+
+.btn-cta:active {
+    transform: translateY(-1px);
+}
+
+@media only screen and (max-width: 900px) {
+    .section-container {
+        gap: 2.5rem;
+        padding: 2.25rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero__destaques {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        margin: 0.5rem auto;
+    }
+
+    .section-container,
+    .section-container.reverse {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .section-image-wrapper {
+        max-width: 100%;
+        height: 240px;
+        order: -1; /* Imagem fica no topo no mobile */
+    }
+
+    .section-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .btn-cta {
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section-container,
+    .section-container.reverse {
+        padding: 1.5rem 1.25rem;
+        gap: 1.5rem;
+    }
+
+    .section-image-wrapper {
+        height: 190px;
+    }
+
+    .section-title {
+        font-size: clamp(1.2rem, 4vw, 1.45rem);
+    }
+
+    .section-subtitle {
+        font-size: 0.75rem;
+    }
+
+    .section-text {
+        font-size: 0.9rem;
+        line-height: 1.65;
+    }
+
+    .btn-cta {
+        width: 100%;
+    }
+}
+
+.quem-somos {
+    width: 100%;
+    max-width: 640px;
+    padding: 2.5rem 1.5rem 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(234, 233, 213, 0.12);
+    margin-top: 0.5rem;
+}
+
+.quem-somos__titulo {
+    font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+    font-weight: 600;
+    color: #eae9d5;
+    margin-bottom: 0.75rem;
+}
+
+.quem-somos__texto {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.65;
+    color: rgba(234, 233, 213, 0.8);
+    margin-bottom: 1.25rem;
+}
+
+.quem-somos__label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #eae9d5;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.04em;
+}
+
+.quem-somos__integrantes {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem 1.25rem;
+}
+
+.quem-somos__integrantes li {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(234, 233, 213, 0.9);
+    padding: 0.4rem 0.85rem;
+    background-color: rgba(4, 50, 102, 0.45);
+    border-radius: 6px;
+    border: 1px solid rgba(32, 100, 145, 0.4);
+}
+
+@media only screen and (max-width: 580px) {
+    .home-main {
+        padding: 2.5rem 1.25rem;
+        gap: 2.5rem;
+    }
+
+    .paginas-site__grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .paginas-site__card {
+        aspect-ratio: 16 / 10;
+    }
+
+    .quem-somos {
+        padding: 1.5rem 0;
+    }
+
+    .quem-somos__integrantes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @media only screen and (min-width:1000px) and (max-width: 1400px){
     footer .rodape img{
         width: 5.5%;
