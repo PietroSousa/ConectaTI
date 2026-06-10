@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
 /* =============================================
    PÁGINA INÍCIO — Seção principal (<main>)
    Cole abaixo de "main { flex:1 }" no style.css
@@ -52,6 +53,7 @@
     font-weight: 300;
     line-height: 1.7;
     color: rgba(234, 233, 213, 0.88);
+    font-family: Kantumruy Pro;
 }
 
 .hero__texto strong {
@@ -67,6 +69,7 @@
     max-width: 680px;
     margin: 0.5rem 0;
     text-align: left;
+    font-family: Kantumruy Pro;
 }
 
 .hero__destaque-item {
@@ -80,6 +83,7 @@
     font-size: 0.95rem;
     color: rgba(234, 233, 213, 0.95);
     transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    font-family: Kantumruy Pro;
 }
 
 .hero__destaque-item:hover {
@@ -174,6 +178,7 @@
     font-weight: 300;
     line-height: 1.75;
     color: rgba(234, 233, 213, 0.85);
+    font-family: Kantumruy Pro;
 }
 
 .section-image-wrapper {
@@ -228,14 +233,62 @@
 .btn-cta:active {
     transform: translateY(-1px);
 }
+.quem-somos {
+    width: 100%;
+    max-width: 640px;
+    padding: 2.5rem 1.5rem 1rem;
+    text-align: center;
+    border-top: 1px solid rgba(234, 233, 213, 0.12);
+    margin-top: 0.5rem;
+}
 
+.quem-somos__titulo {
+    font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+    font-weight: 600;
+    color: #eae9d5;
+    margin-bottom: 0.75rem;
+}
+
+.quem-somos__texto {
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.65;
+    color: rgba(234, 233, 213, 0.8);
+    margin-bottom: 1.25rem;
+    font-family: Kantumruy Pro;
+}
+
+.quem-somos__label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #eae9d5;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.04em;
+}
+
+.quem-somos__integrantes {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem 1.25rem;
+}
+
+.quem-somos__integrantes li {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(234, 233, 213, 0.9);
+    padding: 0.4rem 0.85rem;
+    background-color: rgba(4, 50, 102, 0.45);
+    border-radius: 6px;
+    border: 1px solid rgba(32, 100, 145, 0.4);
+}
 @media only screen and (max-width: 900px) {
     .section-container {
         gap: 2.5rem;
         padding: 2.25rem;
     }
 }
-
 @media only screen and (max-width: 768px) {
     .hero__destaques {
         grid-template-columns: 1fr;
@@ -270,7 +323,6 @@
         align-self: center;
     }
 }
-
 @media only screen and (max-width: 480px) {
     .section-container,
     .section-container.reverse {
@@ -299,57 +351,6 @@
         width: 100%;
     }
 }
-
-.quem-somos {
-    width: 100%;
-    max-width: 640px;
-    padding: 2.5rem 1.5rem 1rem;
-    text-align: center;
-    border-top: 1px solid rgba(234, 233, 213, 0.12);
-    margin-top: 0.5rem;
-}
-
-.quem-somos__titulo {
-    font-size: clamp(1.1rem, 2.5vw, 1.35rem);
-    font-weight: 600;
-    color: #eae9d5;
-    margin-bottom: 0.75rem;
-}
-
-.quem-somos__texto {
-    font-size: 0.9rem;
-    font-weight: 300;
-    line-height: 1.65;
-    color: rgba(234, 233, 213, 0.8);
-    margin-bottom: 1.25rem;
-}
-
-.quem-somos__label {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #eae9d5;
-    margin-bottom: 0.75rem;
-    letter-spacing: 0.04em;
-}
-
-.quem-somos__integrantes {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.6rem 1.25rem;
-}
-
-.quem-somos__integrantes li {
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: rgba(234, 233, 213, 0.9);
-    padding: 0.4rem 0.85rem;
-    background-color: rgba(4, 50, 102, 0.45);
-    border-radius: 6px;
-    border: 1px solid rgba(32, 100, 145, 0.4);
-}
-
 @media only screen and (max-width: 580px) {
     .home-main {
         padding: 2.5rem 1.25rem;
