@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/logo.png">
+    <title>Cursos — Conecta TI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600&family=Tomorrow:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/comparativo-cursos.css">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <div class="logo">
+                <a href="inicio.html"><img src="../images/logotipo.png" alt="Logotipo"></a>
+            </div>
+            <button class="menu-toggle" id="menuToggle"> &#9776 </button>
+            <div class="itens">
+                <ul id="lista-itens">
+                    <li><a href="inicio.html">Início</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="OndeEstudar.html">Onde Estudar?</a></li>
+                    <li><a href="Carreiras-Base.html">Carreiras</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="comparativo-cursos" class="comparativo" aria-labelledby="comparativo-titulo">
+            <div class="comparativo__container">
+                <header class="comparativo__intro">
+                    <p class="comparativo__eyebrow">Conecta TI</p>
+                    <h2 id="comparativo-titulo" class="comparativo__titulo">Cursos e diferenças: comparativo</h2>
+                    <p class="comparativo__descricao">
+                        Análise individual de cada formação e uma visão resumida para ajudar na escolha do curso
+                        que melhor combina com seus objetivos profissionais.
+                    </p>
+                </header>
+
+                <div class="comparativo__cards" role="list">
+                    <article class="curso-card" role="listitem">
+                        <div class="curso-card__header">
+                            <h3 class="curso-card__titulo">Ciência da Computação</h3>
+                            <span class="curso-card__badge">Muito Alta</span>
+                        </div>
+                        <p class="curso-card__texto">
+                            Estuda fundamentos teóricos, lógica complexa, análise de complexidade de algoritmos,
+                            compiladores, sistemas operacionais, inteligência computacional e criação de tecnologia.
+                        </p>
+                        <dl class="curso-card__meta">
+                            <div class="curso-card__meta-item">
+                                <dt>Relevância de Mercado</dt>
+                                <dd>Muito alta, principalmente em Big Techs, centros de P&amp;D e na indústria de software base. Forma profissionais para cargos seniores e de pesquisa.</dd>
+                            </div>
+                            <div class="curso-card__meta-item">
+                                <dt>Nível de Dificuldade</dt>
+                                <dd>Muito Alto. Exige forte base em matemática abstrata e cálculo (Cálculo, Álgebra Linear).</dd>
+                            </div>
+                        </dl>
+                    </article>
+
+                    <article class="curso-card" role="listitem">
+                        <div class="curso-card__header">
+                            <h3 class="curso-card__titulo">Engenharia da Computação</h3>
+                            <span class="curso-card__badge">Alta</span>
+                        </div>
+                        <p class="curso-card__texto">
+                            Estuda integração total entre hardware e software, sistemas embarcados, automação,
+                            circuitos digitais, robótica e Internet das Coisas (IoT).
+                        </p>
+                        <dl class="curso-card__meta">
+                            <div class="curso-card__meta-item">
+                                <dt>Relevância de Mercado</dt>
+                                <dd>Alta e nichada. Focada na indústria automotiva, telecomunicações e fabricantes de eletrônicos.</dd>
+                            </div>
+                            <div class="curso-card__meta-item">
+                                <dt>Nível de Dificuldade</dt>
+                                <dd>Muito Alto. Além da carga matemática avançada, inclui disciplinas densas de Física.</dd>
+                            </div>
+                        </dl>
+                    </article>
+
+                    <article class="curso-card" role="listitem">
+                        <div class="curso-card__header">
+                            <h3 class="curso-card__titulo">Engenharia de Software</h3>
+                            <span class="curso-card__badge">Altíssima</span>
+                        </div>
+                        <p class="curso-card__texto">
+                            Estuda processos, arquitetura de grandes projetos (Clean Architecture, Microservices),
+                            qualidade, gerenciamento, DevOps e testes automatizados.
+                        </p>
+                        <dl class="curso-card__meta">
+                            <div class="curso-card__meta-item">
+                                <dt>Relevância de Mercado</dt>
+                                <dd>Altíssima no setor corporativo tradicional, Fintechs, bancos e empresas SaaS, preparando para liderança técnica (Tech Lead, Arquiteto).</dd>
+                            </div>
+                            <div class="curso-card__meta-item">
+                                <dt>Nível de Dificuldade</dt>
+                                <dd>Média-Alta. O foco matemático migra para Estatística e Matemática Discreta.</dd>
+                            </div>
+                        </dl>
+                    </article>
+
+                    <article class="curso-card" role="listitem">
+                        <div class="curso-card__header">
+                            <h3 class="curso-card__titulo">Ciência de Dados</h3>
+                            <span class="curso-card__badge">Alta</span>
+                        </div>
+                        <p class="curso-card__texto">
+                            Estuda extração de valor de dados, manipulação de Big Data, engenharia de dados, BI,
+                            modelagem preditiva e storytelling.
+                        </p>
+                        <dl class="curso-card__meta">
+                            <div class="curso-card__meta-item">
+                                <dt>Relevância de Mercado</dt>
+                                <dd>Alta e crescente. Essencial para o setor financeiro, e-commerce e consultorias estratégicas que dependem de decisões baseadas em dados.</dd>
+                            </div>
+                            <div class="curso-card__meta-item">
+                                <dt>Nível de Dificuldade</dt>
+                                <dd>Alta. Exige domínio em Estatística, Probabilidade e Vetores.</dd>
+                            </div>
+                        </dl>
+                    </article>
+
+                    <article class="curso-card" role="listitem">
+                        <div class="curso-card__header">
+                            <h3 class="curso-card__titulo">Inteligência Artificial</h3>
+                            <span class="curso-card__badge">Extremamente Alta</span>
+                        </div>
+                        <p class="curso-card__texto">
+                            Estuda modelos inteligentes, redes neurais, aprendizado de máquina, treinamento de LLMs,
+                            Visão Computacional e Processamento de Linguagem Natural (PLN).
+                        </p>
+                        <dl class="curso-card__meta">
+                            <div class="curso-card__meta-item">
+                                <dt>Relevância de Mercado</dt>
+                                <dd>Extremamente alta e estratégica. Demandado por empresas de tecnologia avançada, startups de IA e saúde digital.</dd>
+                            </div>
+                            <div class="curso-card__meta-item">
+                                <dt>Nível de Dificuldade</dt>
+                                <dd>Muito Alto. Fortemente ancorado em Álgebra Linear, Otimização e redes complexas.</dd>
+                            </div>
+                        </dl>
+                    </article>
+
+                    <article class="curso-card" role="listitem">
+                        <div class="curso-card__header">
+                            <h3 class="curso-card__titulo">Cibersegurança</h3>
+                            <span class="curso-card__badge">Crítica</span>
+                        </div>
+                        <p class="curso-card__texto">
+                            Estuda proteção de infraestruturas, análise de vulnerabilidades, auditoria, criptografia,
+                            testes de invasão (Pentest) e análise forense.
+                        </p>
+                        <dl class="curso-card__meta">
+                            <div class="curso-card__meta-item">
+                                <dt>Relevância de Mercado</dt>
+                                <dd>Crítica e em forte expansão. Os principais contratantes são instituições financeiras, governos e empresas de computação em nuvem.</dd>
+                            </div>
+                            <div class="curso-card__meta-item">
+                                <dt>Nível de Dificuldade</dt>
+                                <dd>Média. O foco matemático é direcionado especificamente para Cibersegurança, Criptografia e Redes.</dd>
+                            </div>
+                        </dl>
+                    </article>
+
+                    <article class="curso-card" role="listitem">
+                        <div class="curso-card__header">
+                            <h3 class="curso-card__titulo">Análise e Desenvolvimento de Sistemas (ADS)</h3>
+                            <span class="curso-card__badge">Muito Alta</span>
+                        </div>
+                        <p class="curso-card__texto">
+                            Estuda aplicação prática de programação (Fullstack Web/Mobile), engenharia de requisitos
+                            e bancos de dados de forma ágil.
+                        </p>
+                        <dl class="curso-card__meta">
+                            <div class="curso-card__meta-item">
+                                <dt>Relevância de Mercado</dt>
+                                <dd>Muito alta para inserção rápida. Grandemente absorvido por fábricas de software, startups e departamentos internos de TI.</dd>
+                            </div>
+                            <div class="curso-card__meta-item">
+                                <dt>Nível de Dificuldade</dt>
+                                <dd>Baixa-Média. Matemática aplicada e direta, focada em Lógica e Matemática Discreta.</dd>
+                            </div>
+                        </dl>
+                    </article>
+                </div>
+
+                <div class="comparativo__tabela">
+                    <h3 class="comparativo__subtitulo">Tabela comparativa resumida</h3>
+                    <p class="comparativo__tabela-descricao">
+                        Visão geral lado a lado dos principais critérios de cada curso.
+                    </p>
+                    <div class="comparativo__table-wrapper" tabindex="0" aria-label="Tabela comparativa de cursos — role horizontalmente em telas pequenas">
+                        <table class="comparativo__table">
+                            <caption class="comparativo__table-caption">
+                                Comparativo entre cursos de tecnologia: foco, mercado, dificuldade e diferencial
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Curso</th>
+                                    <th scope="col">Foco do Estudo</th>
+                                    <th scope="col">Relevância de Mercado</th>
+                                    <th scope="col">Dificuldade Geral</th>
+                                    <th scope="col">Principal Diferencial</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Ciência da Computação</th>
+                                    <td>Teoria, algoritmos e lógica</td>
+                                    <td>Muito Alta (P&amp;D e Big Techs)</td>
+                                    <td>Muito Alta</td>
+                                    <td>Criação de novas tecnologias e base teórica profunda.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Engenharia da Computação</th>
+                                    <td>Hardware, IoT e circuitos</td>
+                                    <td>Alta (Indústria e Eletrônicos)</td>
+                                    <td>Muito Alta</td>
+                                    <td>União física entre eletrônica e programação.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Engenharia de Software</th>
+                                    <td>Arquitetura e gestão de projetos</td>
+                                    <td>Altíssima (SaaS e Bancos)</td>
+                                    <td>Média-Alta</td>
+                                    <td>Foco no ciclo de vida e qualidade do software em larga escala.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ciência de Dados</th>
+                                    <td>Estatística e Big Data</td>
+                                    <td>Alta (Finanças e E-commerce)</td>
+                                    <td>Alta</td>
+                                    <td>Transformação de dados brutos em decisões de negócios.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Inteligência Artificial</th>
+                                    <td>Modelos preditivos e redes neurais</td>
+                                    <td>Muito Alta (Tech Avançada)</td>
+                                    <td>Muito Alta</td>
+                                    <td>Especialização profunda em sistemas autônomos e cognitivos.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cibersegurança</th>
+                                    <td>Defesa, redes e criptografia</td>
+                                    <td>Crítica (Governo e Bancos)</td>
+                                    <td>Média</td>
+                                    <td>Foco total na proteção, auditoria e teste de invasão.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">ADS</th>
+                                    <td>Programação prática e ágil</td>
+                                    <td>Alta (Startups e Fábricas de SW)</td>
+                                    <td>Baixa-Média</td>
+                                    <td>Formação rápida focada no mercado de desenvolvimento prático.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape">
+            <img src="../images/logo.png" alt="Logo">
+            <h3>CONECTA TI</h3>
+            <p>Copyright &copy; 2026 - Todos os direitos reservados - conectati.com</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('lista-itens');
+        menuToggle.addEventListener('click', () => { navMenu.classList.toggle('active'); });
+    </script>
+</body>
+
+</html>

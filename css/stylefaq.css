@@ -1,0 +1,161 @@
+/* Bloco de apresentação no topo da página */
+.faq-hero {
+    padding: 2.8rem 2rem 2.2rem;
+    text-align: center;
+    background: #2d2d28;
+    border-bottom: 0.2rem solid #043266;
+}
+
+/* Título principal do hero */
+.faq-hero h1 {
+    font-family: Tomorrow, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #206491;
+    margin-bottom: 8px;
+}
+
+/* Subtítulo do hero */
+.faq-hero p {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-size: 1.2rem;
+    color: #eae9d5;
+    max-width: 420px;
+    margin: 0 auto;
+    line-height: 1.65;
+    opacity: 0.75;
+}
+
+/* Container de todas as perguntas — centralizado e com largura máxima */
+.faq-main {
+    padding: 2rem 2rem 5rem;
+    font-family: 'Kantumruy Pro', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Título de cada seção (ex: "Estudos e Prática") */
+.section-label {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: #eae9d5;
+    opacity: 0.55;
+    margin-bottom: 12px;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Remove o espaço extra acima do primeiro section-label */
+.section-label:first-child {
+    margin-top: 0;
+}
+
+/* Linha decorativa que se estende à direita do título da seção */
+.section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(234, 233, 213, 0.2);
+}
+
+/* Grupo de perguntas de uma seção */
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+/* Card individual de cada pergunta */
+.acc-item {
+    background: #043266;
+    border: 2px solid rgba(234, 233, 213, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Área clicável com a pergunta e o ícone */
+.acc-header {
+    padding: 13px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+}
+
+/* Destaque sutil ao passar o mouse na pergunta */
+.acc-header:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+/* Texto da pergunta */
+.acc-q {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #eae9d5;
+    line-height: 1.4;
+}
+
+/* Ícone de seta — gira ao abrir */
+.acc-icon {
+    font-size: 22px;
+    color: #eae9d5;
+    opacity: 0.6;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+    line-height: 1;
+    display: inline-block;
+}
+
+/* Seta rotacionada e mais visível quando o item está aberto */
+.acc-item.open .acc-icon {
+    transform: rotate(180deg);
+    opacity: 1;
+}
+
+/* Texto da resposta — oculto por padrão */
+.acc-body {
+    background: #2d2d28;
+    border-top: 1px solid rgba(234, 233, 213, 0.15);
+    padding: 12px 16px 14px;
+    font-size: 1.1rem;
+    color: #eae9d5;
+    opacity: 0.75;
+    line-height: 1.65;
+    display: none;
+}
+
+/* Exibe a resposta quando o item está aberto */
+.acc-item.open .acc-body {
+    display: block;
+}
+
+/* Ajustes para telas pequenas (celular) */
+@media only screen and (max-width: 580px) {
+    .faq-hero {
+        padding: 2rem 1.2rem 1.8rem;
+    }
+
+    .faq-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .faq-hero p {
+        font-size: 1rem;
+    }
+
+    .faq-main {
+        padding: 1.5rem 1rem 2rem;
+    }
+
+    .acc-q {
+        font-size: 13px;
+    }
+
+    .acc-body {
+        font-size: 12px;
+    }
+}
