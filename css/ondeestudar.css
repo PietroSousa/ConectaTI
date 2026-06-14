@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+main div.titulo {
+    text-align: center;
+    padding: 2.5rem 1rem 1rem;
+}
+
+main div.titulo h1 {
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #206491;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+main div.titulo p {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-size: 1.15rem;
+    color: #eae9d5;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    opacity: 0.75;
+}
 main div.faculdades {
     width: 100%;
     margin: 0 auto;
@@ -151,6 +177,18 @@ main div.faculdade div.texto ul li a:hover {
     .informacoes-adicionais p {
         font-size: 0.85rem;
     }
+    main div.titulo {
+        padding: 1.8rem 1rem 0.5rem;
+    }
+
+    main div.titulo h1 {
+        font-size: 2rem;
+    }
+
+    main div.titulo p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
 }
 @media only screen and (max-width: 458px) {
     main div.faculdades {
@@ -184,5 +222,17 @@ main div.faculdade div.texto ul li a:hover {
     
     .informacoes-adicionais p {
         font-size: 0.80rem;
+    }
+    main div.titulo {
+        padding: 1.8rem 1rem 0.5rem;
+    }
+
+    main div.titulo h1 {
+        font-size: 1.6rem;
+    }
+
+    main div.titulo p {
+        font-size: 0.9rem;
+        line-height: 1.4;
     }
 }
